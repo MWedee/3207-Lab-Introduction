@@ -1,16 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
-
+#include "randchar.c"
 
 int main()
 {
-	int a;
-
-	/* seed the randomizer */
+    /* seed the randomizer */
 	srand( (unsigned)time(NULL) );
-
+	int a;
 	printf("Today's random word: ");
 	for(a=0;a<7;a++)
 		putchar( randchar() );
